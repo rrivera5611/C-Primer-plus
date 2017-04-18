@@ -1,0 +1,24 @@
+/* Write a program that has main() call a user-defined function that takes
+   a distance in light-years as an argument and then returns the distance in astronomical units
+*/
+
+#include <iostream>
+
+double convert_to_AU(double);
+
+int main()
+{
+    std::cout << "Enter the number of light years: ";
+    double light_years;
+    std::cin >> light_years;
+    //convert_to_AU(light_years);
+    std::cout << light_years << " light years = "
+         << convert_to_AU(light_years) << " astronomical units.";
+    return 0;
+}
+
+double convert_to_AU(double light_years)
+{
+    double Ast_units = light_years * 63240;
+    return Ast_units;
+}
