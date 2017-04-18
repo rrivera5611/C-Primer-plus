@@ -1,0 +1,14 @@
+// Write a program that asks for a distance in furlongs and converts it to yards.
+
+#include <iostream>
+
+int main()
+{
+  std::cout << "What is the distance in furlongs? \n";
+  int dist;
+  cin >> dist;
+  std::cout << "The distance in yards is " 
+            << dist * 220;
+            
+   return 0;
+}
