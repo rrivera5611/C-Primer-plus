@@ -1,0 +1,32 @@
+/* Write a C++ program that uses three user-defined functions(counting main() as one)
+   and produces the following output:
+   Three blind mice
+   Three blind mice
+   See how they run
+   See how they run
+*/
+
+#include <iostream>
+
+void mice(int);
+void run(int);
+
+int main()
+{
+    mice(2);
+    run(2);
+    
+    return 0;
+}
+
+void mice(int n)
+{
+    for(int i = 1; i <= 2; i++)
+    std::cout << "Three blind mice.\n";
+}
+
+void run(int n)
+{
+    for(int i = 1; i <= 2; i++)
+    std::cout << "See how they run.\n";
+}

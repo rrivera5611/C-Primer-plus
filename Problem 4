@@ -1,0 +1,27 @@
+/* Write a program that asks the user to enter his or her age. The program then should display
+   the age in months.
+*/
+
+// I decided to use a function for this program merely for practice for myself
+// It is possible to do the program without a function to calculate.
+
+using namespace std;
+
+int calculator(int);
+
+int main()
+{
+    cout << "Enter your age: ";
+    int age;
+    cin >> age;
+    
+    cout << "Your age in months is " 
+         << calculator(age) <<".\n";
+    
+    return 0;
+}
+
+int calculator(int age)
+{
+    return age * 12;
+}
